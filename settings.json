@@ -1,0 +1,61 @@
+{
+ "workbench.activityBar.visible": false,
+ "editor.accessibilitySupport": "off",
+ "editor.minimap.enabled": false,
+ "editor.fontSize": 18,
+ "terminal.integrated.fontSize": 16,
+ "rust-analyzer.diagnostics.disabled": ["missing-unsafe"],
+ "prettier.tabWidth": 1,
+ "editor.tabSize": 1,
+ "npm.scriptExplorerAction": "run",
+ "workbench.editor.pinnedTabSizing": "shrink",
+ "editor.quickSuggestions": {
+  "other": true,
+  "comments": false,
+  "strings": true
+ },
+ "css.lint.unknownAtRules": "ignore",
+ "diffEditor.wordWrap": "on",
+ "rust-analyzer.procMacro.enable": false,
+ "npm.enableRunFromFolder": true,
+ "[yaml]": {
+  "editor.formatOnSave": false
+ },
+ "terminal.integrated.scrollback": 10000,
+ "editor.wordWrap": "on",
+ "editor.wrappingIndent": "indent",
+ "[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[html]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[jsonc]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[json]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "crates.errorDecorator": "❗️",
+ "rust-analyzer.lens.debug": false,
+ "rust-analyzer.lens.run": false,
+ "extensions.ignoreRecommendations": true,
+ "extensions.autoUpdate": false,
+ "update.mode": "manual",
+ "telemetry.enableTelemetry": false,
+ "telemetry.enableCrashReporter": false,
+ "rust-analyzer.lens.implementations": false,
+ "rust-analyzer.lens.enable": false,
+ "javascript.suggest.autoImports": false,
+ "svelte.plugin.html.tagComplete.enable": false,
+ "versionlens.suggestions.showOnStartup": true,
+ "svelte.enable-ts-plugin": true,
+ "editor.formatOnSave": true,
+ "window.zoomLevel": -1,
+ "rust-analyzer.inlayHints.enable": false,
+ "editor.folding": false,
+ "editor.glyphMargin": false,
+ "workbench.colorCustomizations": {
+  "editorLineNumber.foreground": "#404040"
+ }
+}
