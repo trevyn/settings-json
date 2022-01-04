@@ -4,9 +4,10 @@
  "editor.minimap.enabled": false,
  "editor.fontSize": 18,
  "terminal.integrated.fontSize": 16,
- "rust-analyzer.diagnostics.disabled": ["missing-unsafe"],
+ // "rust-analyzer.diagnostics.disabled": ["missing-unsafe"],
  "prettier.tabWidth": 1,
  "editor.tabSize": 1,
+ "editor.detectIndentation": false,
  "npm.scriptExplorerAction": "run",
  "workbench.editor.pinnedTabSizing": "shrink",
  "editor.quickSuggestions": {
@@ -16,7 +17,6 @@
  },
  "css.lint.unknownAtRules": "ignore",
  "diffEditor.wordWrap": "on",
- "rust-analyzer.procMacro.enable": false,
  "npm.enableRunFromFolder": true,
  "[yaml]": {
   "editor.formatOnSave": false
@@ -37,25 +37,39 @@
   "editor.defaultFormatter": "esbenp.prettier-vscode"
  },
  "crates.errorDecorator": "❗️",
- "rust-analyzer.lens.debug": false,
- "rust-analyzer.lens.run": false,
  "extensions.ignoreRecommendations": true,
  "extensions.autoUpdate": false,
  "update.mode": "manual",
  "telemetry.enableTelemetry": false,
  "telemetry.enableCrashReporter": false,
  "rust-analyzer.lens.implementations": false,
- "rust-analyzer.lens.enable": false,
+ "rust-analyzer.lens.enable": true,
  "javascript.suggest.autoImports": false,
  "svelte.plugin.html.tagComplete.enable": false,
  "versionlens.suggestions.showOnStartup": true,
  "svelte.enable-ts-plugin": true,
  "editor.formatOnSave": true,
- "window.zoomLevel": -1,
  "rust-analyzer.inlayHints.enable": false,
  "editor.folding": false,
  "editor.glyphMargin": false,
  "workbench.colorCustomizations": {
-  "editorLineNumber.foreground": "#404040"
- }
+  "editorLineNumber.foreground": "#404040",
+  "editor.background": "#0f1117",
+  "sideBar.background": "#181b22"
+ },
+ "rust-analyzer.procMacro.enable": false,
+ "editor.inlineSuggest.enabled": true,
+ "workbench.startupEditor": "none",
+ "github.copilot.enable": {
+  "*": true,
+  "yaml": true,
+  "plaintext": true,
+  "markdown": true
+ },
+ "editor.autoClosingQuotes": "never",
+ "editor.autoSurround": "never",
+ "editor.hover.delay": 1000,
+ "editor.hover.sticky": false,
+ "window.zoomLevel": -1,
+ "rust-analyzer.lens.debug": false
 }
