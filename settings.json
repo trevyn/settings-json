@@ -1,5 +1,4 @@
 {
- "workbench.activityBar.visible": false,
  "editor.accessibilitySupport": "off",
  "editor.minimap.enabled": false,
  "editor.fontSize": 18,
@@ -7,7 +6,7 @@
  // "rust-analyzer.diagnostics.disabled": ["missing-unsafe"],
  "prettier.tabWidth": 1,
  "editor.tabSize": 1,
- "editor.detectIndentation": false,
+ "editor.detectIndentation": true,
  "npm.scriptExplorerAction": "run",
  "workbench.editor.pinnedTabSizing": "shrink",
  "editor.quickSuggestions": {
@@ -25,6 +24,9 @@
  "editor.wordWrap": "on",
  "editor.wrappingIndent": "indent",
  "[javascript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
+ "[svelte]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
  },
  "[html]": {
@@ -70,6 +72,7 @@
  "editor.autoSurround": "never",
  "editor.hover.delay": 1000,
  "editor.hover.sticky": false,
- "window.zoomLevel": -1,
- "rust-analyzer.lens.debug": false
+ "rust-analyzer.lens.debug": false,
+ "workbench.activityBar.visible": false,
+ "terminal.integrated.tabs.enabled": false
 }
