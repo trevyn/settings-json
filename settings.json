@@ -3,7 +3,6 @@
  "editor.minimap.enabled": false,
  "editor.fontSize": 18,
  "terminal.integrated.fontSize": 16,
- // "rust-analyzer.diagnostics.disabled": ["missing-unsafe"],
  "prettier.tabWidth": 1,
  "editor.tabSize": 1,
  "editor.detectIndentation": true,
@@ -17,12 +16,12 @@
  "css.lint.unknownAtRules": "ignore",
  "diffEditor.wordWrap": "on",
  "npm.enableRunFromFolder": true,
- "[yaml]": {
-  "editor.formatOnSave": false
- },
  "terminal.integrated.scrollback": 10000,
  "editor.wordWrap": "on",
  "editor.wrappingIndent": "indent",
+ "[yaml]": {
+  "editor.formatOnSave": false
+ },
  "[javascript]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
  },
@@ -38,41 +37,149 @@
  "[json]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
  },
+ "[typescript]": {
+  "editor.defaultFormatter": "esbenp.prettier-vscode"
+ },
  "crates.errorDecorator": "❗️",
  "extensions.ignoreRecommendations": true,
  "extensions.autoUpdate": false,
  "update.mode": "manual",
- "telemetry.enableTelemetry": false,
- "telemetry.enableCrashReporter": false,
  "rust-analyzer.lens.implementations": false,
  "rust-analyzer.lens.enable": true,
  "javascript.suggest.autoImports": false,
  "svelte.plugin.html.tagComplete.enable": false,
  "versionlens.suggestions.showOnStartup": true,
  "svelte.enable-ts-plugin": true,
- "editor.formatOnSave": true,
  "rust-analyzer.inlayHints.enable": false,
  "editor.folding": false,
  "editor.glyphMargin": false,
- "workbench.colorCustomizations": {
-  "editorLineNumber.foreground": "#404040",
-  "editor.background": "#0f1117",
-  "sideBar.background": "#181b22"
+ "editor.tokenColorCustomizations": {
+  "textMateRules": [
+   {
+    "scope": [
+     "entity.name.function",
+     "support.function",
+     "support.constant.handlebars",
+     "source.powershell variable.other.member",
+     "entity.name.operator.custom-literal"
+    ],
+    "settings": {
+     "foreground": "#ffffa1"
+    }
+   },
+   {
+    "scope": [
+     "support.class",
+     "support.type",
+     "entity.name.type",
+     "entity.name.namespace",
+     "entity.other.attribute",
+     "entity.name.scope-resolution",
+     "entity.name.class",
+     "storage.type.numeric.go",
+     "storage.type.byte.go",
+     "storage.type.boolean.go",
+     "storage.type.string.go",
+     "storage.type.uintptr.go",
+     "storage.type.error.go",
+     "storage.type.rune.go",
+     "storage.type.cs",
+     "storage.type.generic.cs",
+     "storage.type.modifier.cs",
+     "storage.type.variable.cs",
+     "storage.type.annotation.java",
+     "storage.type.generic.java",
+     "storage.type.java",
+     "storage.type.object.array.java",
+     "storage.type.primitive.array.java",
+     "storage.type.primitive.java",
+     "storage.type.token.java",
+     "storage.type.groovy",
+     "storage.type.annotation.groovy",
+     "storage.type.parameters.groovy",
+     "storage.type.generic.groovy",
+     "storage.type.object.array.groovy",
+     "storage.type.primitive.array.groovy",
+     "storage.type.primitive.groovy"
+    ],
+    "settings": {
+     "foreground": "#79ffcb"
+    }
+   },
+   {
+    "scope": "keyword",
+    "settings": {
+     "foreground": "#60a0ff"
+    }
+   },
+   {
+    "scope": ["string", "meta.embedded.assembly"],
+    "settings": {
+     "foreground": "#ff9a73"
+    }
+   },
+   {
+    "scope": ["meta.preprocessor", "entity.name.function.preprocessor"],
+    "settings": {
+     "foreground": "#a6a0ff"
+    }
+   }
+  ]
  },
- "rust-analyzer.procMacro.enable": false,
+ "editor.fontWeight": "550",
+ "workbench.colorCustomizations": {
+  "editor.foreground": "#f0f0f0",
+  "editorLineNumber.foreground": "#404040",
+  "editor.background": "#000",
+  // "editor.background": "#181b22",
+  // "editor.background": "#0b0b0b",
+  // "sideBar.background": "#181b22",
+  "sideBar.background": "#000",
+  // "sideBar.background": "#0b0b0b",
+  "terminal.foreground": "#fff",
+  // "terminal.background": "#0b0b0b",
+  "statusBar.background": "#000",
+  "editorInlayHint.background": "#222",
+  "editorInlayHint.foreground": "#666",
+  "editorGroupHeader.tabsBackground": "#000",
+  "tab.inactiveBackground": "#000",
+  "tab.inactiveForeground": "#ffffff60"
+  // "editorInlayHint.parameterBackground": "#60303010",
+  // "editorInlayHint.parameterForeground": "#968383",
+  // "editorInlayHint.typeBackground": "#30603010",
+  // "editorInlayHint.typeForeground": "#808080"
+ },
  "editor.inlineSuggest.enabled": true,
  "workbench.startupEditor": "none",
  "github.copilot.enable": {
   "*": true,
   "yaml": true,
   "plaintext": true,
-  "markdown": true
+  "markdown": true,
+  "rust": true
  },
  "editor.autoClosingQuotes": "never",
+ "editor.autoClosingBrackets": "never",
  "editor.autoSurround": "never",
  "editor.hover.delay": 1000,
- "editor.hover.sticky": false,
+ // "editor.hover.sticky": false,
  "rust-analyzer.lens.debug": false,
  "workbench.activityBar.visible": false,
- "terminal.integrated.tabs.enabled": false
+ "telemetry.telemetryLevel": "off",
+ "svelte.plugin.html.completions.emmet": false,
+ "svelte.plugin.html.completions.enable": false,
+ "svelte.plugin.css.completions.emmet": false,
+ "svelte.plugin.css.completions.enable": false,
+ "svelte.plugin.svelte.completions.enable": false,
+ "svelte.plugin.typescript.completions.enable": false,
+ "rust-analyzer.lens.run": false,
+ "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
+ "editor.formatOnSave": true,
+ "markdown.preview.fontSize": 18,
+ "window.zoomLevel": -1,
+ "editor.inlayHints.enabled": false,
+ "tailwindCSS.experimental.classRegex": ["[\\s{]class:\\s?\"([^\"]*)\""],
+ "tailwindCSS.includeLanguages": {
+  "rust": "html"
+ }
 }
