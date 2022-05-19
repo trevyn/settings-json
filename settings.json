@@ -128,6 +128,15 @@
  },
  "editor.fontWeight": "550",
  "workbench.colorCustomizations": {
+  "editorBracketMatch.border": "#fff",
+  "editorBracketMatch.background": "#777",
+  "editorBracketHighlight.foreground1": "#bbb",
+  "editorBracketHighlight.foreground2": "#bbb",
+  "editorBracketHighlight.foreground3": "#bbb",
+  "editorBracketHighlight.foreground4": "#bbb",
+  "editorBracketHighlight.foreground5": "#bbb",
+  "editorBracketHighlight.foreground6": "#bbb",
+  "editorBracketHighlight.unexpectedBracket.foreground": "#bbb",
   "editor.foreground": "#f0f0f0",
   "editorLineNumber.foreground": "#404040",
   "editor.background": "#000",
@@ -172,7 +181,6 @@
  "svelte.plugin.css.completions.enable": false,
  "svelte.plugin.svelte.completions.enable": false,
  "svelte.plugin.typescript.completions.enable": false,
- "rust-analyzer.lens.run": false,
  "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
  "editor.formatOnSave": true,
  "markdown.preview.fontSize": 18,
@@ -181,5 +189,19 @@
  "tailwindCSS.experimental.classRegex": ["[\\s{]class:\\s?\"([^\"]*)\""],
  "tailwindCSS.includeLanguages": {
   "rust": "html"
- }
+ },
+ "rust-analyzer.procMacro.enable": false,
+ "editor.language.brackets": [
+  ["(", ")"],
+  ["{", "}"],
+  ["<", ">"]
+ ],
+ "editor.guides.bracketPairs": true,
+ "editor.language.colorizedBracketPairs": [
+  ["(", ")"],
+  ["{", "}"],
+  ["<", ">"]
+ ],
+ "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+ "editor.bracketPairColorization.enabled": false
 }
