@@ -44,13 +44,11 @@
  "extensions.ignoreRecommendations": true,
  "extensions.autoUpdate": false,
  "update.mode": "manual",
- "rust-analyzer.lens.implementations": false,
  "rust-analyzer.lens.enable": true,
  "javascript.suggest.autoImports": false,
  "svelte.plugin.html.tagComplete.enable": false,
  "versionlens.suggestions.showOnStartup": true,
  "svelte.enable-ts-plugin": true,
- "rust-analyzer.inlayHints.enable": false,
  "editor.folding": false,
  "editor.glyphMargin": false,
  "editor.tokenColorCustomizations": {
@@ -128,6 +126,7 @@
  },
  "editor.fontWeight": "550",
  "workbench.colorCustomizations": {
+  "editorIndentGuide.background": "#222",
   "editorBracketMatch.border": "#fff",
   "editorBracketMatch.background": "#777",
   "editorBracketHighlight.foreground1": "#bbb",
@@ -172,7 +171,6 @@
  "editor.autoSurround": "never",
  "editor.hover.delay": 1000,
  // "editor.hover.sticky": false,
- "rust-analyzer.lens.debug": false,
  "workbench.activityBar.visible": false,
  "telemetry.telemetryLevel": "off",
  "svelte.plugin.html.completions.emmet": false,
@@ -184,8 +182,6 @@
  "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
  "editor.formatOnSave": true,
  "markdown.preview.fontSize": 18,
- "window.zoomLevel": -1,
- "editor.inlayHints.enabled": false,
  "tailwindCSS.experimental.classRegex": ["[\\s{]class:\\s?\"([^\"]*)\""],
  "tailwindCSS.includeLanguages": {
   "rust": "html"
@@ -196,12 +192,14 @@
   ["{", "}"],
   ["<", ">"]
  ],
- "editor.guides.bracketPairs": true,
+ "editor.guides.bracketPairs": "active",
  "editor.language.colorizedBracketPairs": [
   ["(", ")"],
   ["{", "}"],
   ["<", ">"]
  ],
- "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
- "editor.bracketPairColorization.enabled": false
+ "editor.inlayHints.enabled": false,
+ "rust-analyzer.lens.implementations.enable": false,
+ "editor.bracketPairColorization.enabled": false,
+ "window.zoomLevel": -1
 }
