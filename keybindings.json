@@ -1,15 +1,38 @@
-// Place your key bindings in this file to override the defaults
 [
- {
-  "key": "cmd+'",
-  "command": "workbench.action.togglePanel"
- },
- {
-  "key": "cmd+i",
-  "command": "rust-analyzer.toggleInlayHints"
- },
- {
-  "key": "cmd+r",
-  "command": "workbench.action.tasks.restartTask"
- }
+  {
+    "key": "cmd+'",
+    "command": "workbench.action.togglePanel"
+  },
+  {
+    "key": "cmd+i",
+    "command": "rust-analyzer.toggleInlayHints"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "editor.action.inlineSuggest.trigger",
+    "when": "editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "alt+\\",
+    "command": "-editor.action.inlineSuggest.trigger",
+    "when": "config.github.copilot.inlineSuggest.enable && editorTextFocus && !editorHasSelection && !inlineSuggestionsVisible"
+  },
+  {
+    "key": "ctrl+enter",
+    "command": "-github.copilot.generate",
+    "when": "editorTextFocus && github.copilot.activated"
+  },
+  {
+    "key": "cmd+space",
+    "command": "turbopilot.start"
+  },
+  {
+    "key": "cmd+r",
+    "command": "-workbench.action.reloadWindow",
+    "when": "isDevelopment"
+  },
+  {
+    "key": "cmd+r",
+    "command": "workbench.action.tasks.runTask"
+  }
 ]
