@@ -20,7 +20,7 @@
  "editor.wordWrap": "on",
  "editor.wrappingIndent": "indent",
  "[yaml]": {
-  "editor.formatOnSave": false
+  "editor.formatOnSave": true
  },
  "[javascript]": {
   "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -143,10 +143,12 @@
   // "editor.background": "#0b0b0b",
   // "sideBar.background": "#181b22",
   "sideBar.background": "#000",
+  // "gitDecoration.modifiedResourceForeground": "#fc74b1",
+  "sideBar.foreground": "#e5e5e5",
   // "sideBar.background": "#0b0b0b",
   "terminal.foreground": "#fff",
   // "terminal.background": "#0b0b0b",
-  "statusBar.background": "#000",
+  "statusBar.background": "#111",
   "editorInlayHint.background": "#222",
   "editorInlayHint.foreground": "#666",
   "editorGroupHeader.tabsBackground": "#000",
@@ -163,13 +165,13 @@
   "*": true,
   "yaml": true,
   "plaintext": true,
-  "markdown": true,
+  "markdown": false,
   "rust": true
  },
  "editor.autoClosingQuotes": "never",
  "editor.autoClosingBrackets": "never",
  "editor.autoSurround": "never",
- "editor.hover.delay": 1000,
+ "editor.hover.delay": 700,
  // "editor.hover.sticky": false,
  "workbench.activityBar.visible": false,
  "telemetry.telemetryLevel": "off",
@@ -180,13 +182,11 @@
  "svelte.plugin.svelte.completions.enable": false,
  "svelte.plugin.typescript.completions.enable": false,
  "editor.fontFamily": "'SF Mono', Menlo, Monaco, 'Courier New', monospace",
- "editor.formatOnSave": true,
  "markdown.preview.fontSize": 18,
  "tailwindCSS.experimental.classRegex": ["[\\s{]class:\\s?\"([^\"]*)\""],
  "tailwindCSS.includeLanguages": {
   "rust": "html"
  },
- "rust-analyzer.procMacro.enable": false,
  "editor.language.brackets": [
   ["(", ")"],
   ["{", "}"],
@@ -198,8 +198,18 @@
   ["{", "}"],
   ["<", ">"]
  ],
- "editor.inlayHints.enabled": false,
+ "editor.inlayHints.enabled": "off",
  "rust-analyzer.lens.implementations.enable": false,
  "editor.bracketPairColorization.enabled": false,
- "window.zoomLevel": -1
+ "editor.stickyScroll.enabled": true,
+ "rust-analyzer.rustfmt.overrideCommand": [
+  "/Users/e/Documents/GitHub/rustfmt/target/debug/rustfmt",
+  "--edition=2021"
+ ],
+ "rust-analyzer.checkOnSave.command": "clippy",
+ "editor.acceptSuggestionOnEnter": "off",
+ "editor.suggestOnTriggerCharacters": false,
+ "window.zoomLevel": -1,
+ "editor.formatOnType": true,
+ "editor.formatOnSave": true
 }
